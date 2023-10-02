@@ -16,7 +16,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 import collections
-from typing import DefaultDict, List, OrderedDict, Set
+from typing import DefaultDict, List, OrderedDict, Set, Dict
 
 from babel.core import (
     Locale,
@@ -26,7 +26,7 @@ from babel.core import (
     parse_locale,
 )
 from flask import Flask, current_app, g, request, session
-from flask_babel import Babel
+from flask_babel import Babel, get_babel
 from sdconfig import FALLBACK_LOCALE, SecureDropConfig
 
 
@@ -103,24 +103,23 @@ def configure_babel(config: SecureDropConfig, app: Flask) -> Babel:
     """
     Set up Flask-Babel according to the SecureDrop configuration.
     """
-    # Tell Babel where to find our translations.
     translations_directory = str(config.TRANSLATION_DIRS.absolute())
-    app.config["BABEL_TRANSLATION_DIRECTORIES"] = translations_directory
 
-    # Create the app's Babel instance. Passing the app to the
-    # constructor causes the instance to attach itself to the app.
-    babel = Babel(app)
+    babel = Babel(
+        app,
+        default_translation_directories=translations_directory,
+        locale_selector=lambda: get_locale(config),
+    )
 
     # verify that Babel is only using the translations we told it about
-    if list(babel.translation_directories) != [translations_directory]:
+    configured_directories = get_babel(app).translation_directories
+    if list(configured_directories) != [translations_directory]:
         raise ValueError(
             "Babel translation directories ({}) do not match SecureDrop configuration ({})".format(
-                babel.translation_directories, [translations_directory]
+                configured_directories, [translations_directory]
             )
         )
 
-    # register the function used to determine the locale of a request
-    babel.localeselector(lambda: get_locale(config))
     return babel
 
 
@@ -197,7 +196,8 @@ def map_locale_display_names(
 
 def configure(config: SecureDropConfig, app: Flask) -> None:
     babel = configure_babel(config, app)
-    usable_locales = validate_locale_configuration(config, babel)
+    with app.app_context():
+        usable_locales = validate_locale_configuration(config, babel)
     app.config["LOCALES"] = map_locale_display_names(config, usable_locales)
 
 
@@ -211,17 +211,17 @@ def get_locale(config: SecureDropConfig) -> str:
     - config.DEFAULT_LOCALE
     - config.FALLBACK_LOCALE
     """
-    preferences = []
+    preferences: List[str] = []
     if session and session.get("locale"):
-        preferences.append(session.get("locale"))
+        preferences.append(session["locale"])
     if request.args.get("l"):
-        preferences.insert(0, request.args.get("l"))
+        preferences.insert(0, request.args["l"])
     if not preferences:
         preferences.extend(get_accepted_languages())
     preferences.append(config.DEFAULT_LOCALE)
     preferences.append(FALLBACK_LOCALE)
 
-    locales = current_app.config["LOCALES"]
+    locales: Dict[str, str] = current_app.config["LOCALES"]
     negotiated = negotiate_locale(preferences, locales.keys())
 
     if not negotiated:
