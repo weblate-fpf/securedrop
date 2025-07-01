@@ -916,14 +916,17 @@ msgstr "Hvordan endre sikkerhetsnivået"
 msgid "Click the <img src=\"{icon}\" alt=\"&quot;Security Level&quot; button\"> in the toolbar above"
 msgstr "Klikk på <img src=\"{icon}\" alt=\"&quot;Sikkerhetsnivå&quot; button\"> i verktøylinjen ovenfor"
 
-msgid "Click <b>Change</b> to open Security Level preferences"
-msgstr "Klikk <b>Change</b> for å åpne Sikkerhetsnivå-innstillingene"
+msgid "Click <b>Settings</b> to open Security Level preferences"
+msgstr ""
 
-msgid "Select <b>Safest</b> and close the preferences tab"
-msgstr "Velg <b>Tryggest</b> og lukk fanen med innstillinger"
+msgid "Click <b>Change...</b> and select <b>Safest</b>"
+msgstr ""
 
-msgid "<a href=\"/\" aria-label=\"Follow these instructions, then refresh this page\">Refresh this page</a>, and you're done!"
-msgstr "<a href=\"/\" aria-label=\"Følg disse instruksjonene, deretter oppdater siden\">Last inn siden igjen</a>, og så er du ferdig!"
+msgid "Click <b>Save and restart.</b>"
+msgstr ""
+
+msgid "Tor Browser will restart, with its security level set to <b>Safest</b>. After the restart, come back to this site."
+msgstr ""
 
 msgid "<strong>It is recommended to use Tor Browser to access SecureDrop:</strong> <a class=\"recommend-tor\" href=\"{tor_browser_url}\">Learn how to install it</a>, or ignore this warning to continue."
 msgstr "<strong>Det anbefales å bruke Tor-nettleseren for å nå SecureDrop:</strong> <a class=\"recommend-tor\" href=\"{tor_browser_url}\">Lær hvordan du installerer den</a>, eller se bort fra denne advarselen for å fortsette uten."
@@ -1138,6 +1141,15 @@ msgstr "<strong>Viktig:</strong> Om du ønsker å være helt anonym, <strong>ikk
 
 msgid "Back to submission page"
 msgstr "Tilbake til innsendelsesside"
+
+#~ msgid "Click <b>Change</b> to open Security Level preferences"
+#~ msgstr "Klikk <b>Change</b> for å åpne Sikkerhetsnivå-innstillingene"
+
+#~ msgid "Select <b>Safest</b> and close the preferences tab"
+#~ msgstr "Velg <b>Tryggest</b> og lukk fanen med innstillinger"
+
+#~ msgid "<a href=\"/\" aria-label=\"Follow these instructions, then refresh this page\">Refresh this page</a>, and you're done!"
+#~ msgstr "<a href=\"/\" aria-label=\"Følg disse instruksjonene, deretter oppdater siden\">Last inn siden igjen</a>, og så er du ferdig!"
 
 #~ msgid "There are no submissions!"
 #~ msgstr "Det er ingen innsendelser!"
