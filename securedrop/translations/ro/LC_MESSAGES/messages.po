@@ -928,14 +928,17 @@ msgstr "Cum să schimbați nivelul de securitate"
 msgid "Click the <img src=\"{icon}\" alt=\"&quot;Security Level&quot; button\"> in the toolbar above"
 msgstr "Faceți clic pe butonul <img src=\"{icon}\" alt=\"&quot;Nivel de securitate&quot;\"> din bara de instrumente de mai sus"
 
-msgid "Click <b>Change</b> to open Security Level preferences"
-msgstr "Faceți clic pe <b>Modificați</b> pentru a deschide preferințele Nivelului de securitate"
+msgid "Click <b>Settings</b> to open Security Level preferences"
+msgstr ""
 
-msgid "Select <b>Safest</b> and close the preferences tab"
-msgstr "Selectați <b>Cel mai sigur</b> și închideți fila de preferințe"
+msgid "Click <b>Change...</b> and select <b>Safest</b>"
+msgstr ""
 
-msgid "<a href=\"/\" aria-label=\"Follow these instructions, then refresh this page\">Refresh this page</a>, and you're done!"
-msgstr "<a href=\"/\" aria-label=\"Urmați aceste instrucțiuni, apoi actualizați această pagină\">Actualizați această pagină</a> și ați terminat!"
+msgid "Click <b>Save and restart.</b>"
+msgstr ""
+
+msgid "Tor Browser will restart, with its security level set to <b>Safest</b>. After the restart, come back to this site."
+msgstr ""
 
 msgid "<strong>It is recommended to use Tor Browser to access SecureDrop:</strong> <a class=\"recommend-tor\" href=\"{tor_browser_url}\">Learn how to install it</a>, or ignore this warning to continue."
 msgstr "<strong>Îți recomandăm să folosești browserul Tor pentru a accesa SecureDrop:</strong> <a class=\"recommend-tor\" href=\"{tor_browser_url}\">Află cum îl poți instala</a> sau ignoră acest avertisment pentru a continua."
@@ -1150,6 +1153,15 @@ msgstr "<strong>Important:</strong> Dacă vrei să rămâi anonim(ă), <strong>n
 
 msgid "Back to submission page"
 msgstr "Înapoi la pagina de trimitere"
+
+#~ msgid "Click <b>Change</b> to open Security Level preferences"
+#~ msgstr "Faceți clic pe <b>Modificați</b> pentru a deschide preferințele Nivelului de securitate"
+
+#~ msgid "Select <b>Safest</b> and close the preferences tab"
+#~ msgstr "Selectați <b>Cel mai sigur</b> și închideți fila de preferințe"
+
+#~ msgid "<a href=\"/\" aria-label=\"Follow these instructions, then refresh this page\">Refresh this page</a>, and you're done!"
+#~ msgstr "<a href=\"/\" aria-label=\"Urmați aceste instrucțiuni, apoi actualizați această pagină\">Actualizați această pagină</a> și ați terminat!"
 
 #~ msgid "You were logged out due to inactivity. Click the <img src={icon} alt=\"\" width=\"16\" height=\"16\">&nbsp;<b>New Identity</b> button in your Tor Browser's toolbar before moving on. This will clear your Tor Browser activity data on this device."
 #~ msgstr "Ai fost deconectat(ă) din cauza inactivității. Dă clic pe butonul <img src={icon} alt=\"\" width=\"16\" height=\"16\">&nbsp;<b>Identitate nouă</b> din bara de instrumente a browserului Tor înainte de a merge mai departe. Îți va șterge activitatea din browserul Tor de pe acest dispozitiv."
