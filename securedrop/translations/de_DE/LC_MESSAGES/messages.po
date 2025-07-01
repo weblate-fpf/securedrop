@@ -910,14 +910,17 @@ msgstr "Wie Sie Ihre Sicherheitsstufe ändern"
 msgid "Click the <img src=\"{icon}\" alt=\"&quot;Security Level&quot; button\"> in the toolbar above"
 msgstr "Klicken Sie auf <img src=\"{icon}\" alt=\"Schaltfläche &quot;Sicherheitsstufe&quot;\"> in der Werkzeugleiste oben"
 
-msgid "Click <b>Change</b> to open Security Level preferences"
-msgstr "Klicken Sie auf <b>Ändern</b> um die Einstellungen der Sicherheitsstufe anzuzeigen"
+msgid "Click <b>Settings</b> to open Security Level preferences"
+msgstr ""
 
-msgid "Select <b>Safest</b> and close the preferences tab"
-msgstr "Wählen Sie <b>Am sichersten</b> und schließen Sie den Einstellungs-Tab"
+msgid "Click <b>Change...</b> and select <b>Safest</b>"
+msgstr ""
 
-msgid "<a href=\"/\" aria-label=\"Follow these instructions, then refresh this page\">Refresh this page</a>, and you're done!"
-msgstr "<a href=\"/\" aria-label=\"Befolgen Sie diese Anweisungen und aktualisieren Sie dann diese Seite\">Aktualisieren Sie diese Seite</a>, und Sie sind fertig!"
+msgid "Click <b>Save and restart.</b>"
+msgstr ""
+
+msgid "Tor Browser will restart, with its security level set to <b>Safest</b>. After the restart, come back to this site."
+msgstr ""
 
 msgid "<strong>It is recommended to use Tor Browser to access SecureDrop:</strong> <a class=\"recommend-tor\" href=\"{tor_browser_url}\">Learn how to install it</a>, or ignore this warning to continue."
 msgstr "<strong>Es wird empfohlen, für den Zugriff auf SecureDrop den Tor-Browser zu verwenden:</strong> <a class=\"recommend-tor\" href=\"{tor_browser_url}\">Erfahren Sie, wie Sie ihn installieren</a> oder ignorieren Sie diese Warnung, um fortzufahren."
@@ -1132,6 +1135,15 @@ msgstr "<strong>Wichtig:</strong> Verwenden Sie <strong>nicht</strong> GPG, um d
 
 msgid "Back to submission page"
 msgstr "Zurück zur Einreichungsseite"
+
+#~ msgid "Click <b>Change</b> to open Security Level preferences"
+#~ msgstr "Klicken Sie auf <b>Ändern</b> um die Einstellungen der Sicherheitsstufe anzuzeigen"
+
+#~ msgid "Select <b>Safest</b> and close the preferences tab"
+#~ msgstr "Wählen Sie <b>Am sichersten</b> und schließen Sie den Einstellungs-Tab"
+
+#~ msgid "<a href=\"/\" aria-label=\"Follow these instructions, then refresh this page\">Refresh this page</a>, and you're done!"
+#~ msgstr "<a href=\"/\" aria-label=\"Befolgen Sie diese Anweisungen und aktualisieren Sie dann diese Seite\">Aktualisieren Sie diese Seite</a>, und Sie sind fertig!"
 
 #~ msgid "There are no submissions!"
 #~ msgstr "Es gibt keine Einreichungen!"
