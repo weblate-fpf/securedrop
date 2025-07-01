@@ -4,7 +4,19 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
 msgid ""
-msgstr "Project-Id-Version: SecureDrop 0.4.3\nReport-Msgid-Bugs-To: securedrop@freedom.press\nPO-Revision-Date: 2025-02-12 22:34+0000\nLast-Translator: magpie <magpie@users.noreply.weblate.securedrop.org>\nLanguage-Team: Hebrew <https://weblate.securedrop.org/projects/securedrop/securedrop/he/>\nLanguage: he\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n != 1);\nX-Generator: Weblate 5.8.4\nGenerated-By: Babel 2.4.0\n"
+msgstr ""
+"Project-Id-Version: SecureDrop 0.4.3\n"
+"Report-Msgid-Bugs-To: securedrop@freedom.press\n"
+"PO-Revision-Date: 2025-02-12 22:34+0000\n"
+"Last-Translator: magpie <magpie@users.noreply.weblate.securedrop.org>\n"
+"Language-Team: Hebrew <https://weblate.securedrop.org/projects/securedrop/securedrop/he/>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 5.8.4\n"
+"Generated-By: Babel 2.4.0\n"
 
 msgid "Name too long"
 msgstr "השם ארוך מדי"
@@ -902,14 +914,17 @@ msgstr "כיצד לשנות את רמת האבטחה שלך"
 msgid "Click the <img src=\"{icon}\" alt=\"&quot;Security Level&quot; button\"> in the toolbar above"
 msgstr "לחץ על הלחצן <img src=\"{icon}\" alt=\"&quot;רמת אבטחה&quot;\"> בסרגל הכלים למעלה"
 
-msgid "Click <b>Change</b> to open Security Level preferences"
-msgstr "לחץ על <b>שנה</b> כדי לפתוח את העדפות רמת האבטחה"
+msgid "Click <b>Settings</b> to open Security Level preferences"
+msgstr ""
 
-msgid "Select <b>Safest</b> and close the preferences tab"
-msgstr "בחר <b>בטוח ביותר</b> וסגור את כרטיסיית ההעדפות"
+msgid "Click <b>Change...</b> and select <b>Safest</b>"
+msgstr ""
 
-msgid "<a href=\"/\" aria-label=\"Follow these instructions, then refresh this page\">Refresh this page</a>, and you're done!"
-msgstr "<a href=\"/\" aria-label=\"עקוב אחר ההוראות האלה, ולאחר מכן רענן את הדף הזה\">רענן דף זה</a>, וסיימת!"
+msgid "Click <b>Save and restart.</b>"
+msgstr ""
+
+msgid "Tor Browser will restart, with its security level set to <b>Safest</b>. After the restart, come back to this site."
+msgstr ""
 
 msgid "<strong>It is recommended to use Tor Browser to access SecureDrop:</strong> <a class=\"recommend-tor\" href=\"{tor_browser_url}\">Learn how to install it</a>, or ignore this warning to continue."
 msgstr "<strong>מומלץ להשתמש בדפדפן Tor כדי לגשת אל SecureDrop:</strong> <a class=\"recommend-tor\" href=\"{tor_browser_url}\">למד כיצד להתקין אותו</a>, או התעלם מהאזהרה זו כדי להמשיך."
@@ -1124,6 +1139,15 @@ msgstr "<strong>חשוב:</strong> אם ברצונך להישאר אנונימי
 
 msgid "Back to submission page"
 msgstr "חזרה לדף שליחת ההודעות"
+
+#~ msgid "Click <b>Change</b> to open Security Level preferences"
+#~ msgstr "לחץ על <b>שנה</b> כדי לפתוח את העדפות רמת האבטחה"
+
+#~ msgid "Select <b>Safest</b> and close the preferences tab"
+#~ msgstr "בחר <b>בטוח ביותר</b> וסגור את כרטיסיית ההעדפות"
+
+#~ msgid "<a href=\"/\" aria-label=\"Follow these instructions, then refresh this page\">Refresh this page</a>, and you're done!"
+#~ msgstr "<a href=\"/\" aria-label=\"עקוב אחר ההוראות האלה, ולאחר מכן רענן את הדף הזה\">רענן דף זה</a>, וסיימת!"
 
 #~ msgid "There are no submissions!"
 #~ msgstr "אין הודעות!"
